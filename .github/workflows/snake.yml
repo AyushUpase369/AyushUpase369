@@ -26,9 +26,9 @@ jobs:
           outputs: |
             dist/github-snake.svg
             dist/github-snake-dark.svg?palette=github-dark
-            dist/github-snake.gif?color_snake=#ffb86c&color_dots=#44475a,#6272a4,#bd93f9,#ff79c6,#ff5555
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
 
       - name: Deploy Snake Animations to Output Branch
         uses: peaceiris/actions-gh-pages@v3
